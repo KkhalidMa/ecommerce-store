@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شركة عربي</title>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@300;400;500&display=swap" rel="stylesheet">
+    <script type="text/html" src="{require('index.js')}"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="ما تبحث عنه ..." aria-label="Search">
+
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          أختر فئة
+                        </a>
+                      
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value="women">نسائي
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value="men"> رجالي
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value="kids">أطفالي
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">أبحث</button>
+                </form>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">الصفحة الرئيسية</a>
+                        </li>
+                        <li class="nav-item dropdown" aria-labelledby="navbarDropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="true">
+                                أقسام المتجر
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">رجالي</a>
+                                <a class="dropdown-item" href="#">نسائي</a>
+                                <a class="dropdown-item" href="#">أطفالي</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="search.html">البحث المتقدم</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact-us.html">تواصل معنا</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</body>
+</html>
