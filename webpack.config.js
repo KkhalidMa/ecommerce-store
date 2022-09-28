@@ -89,6 +89,15 @@ module.exports = {
                     },
                 ],
             },
+
+            //expose loader
+            {
+                test: require.resolve("jquery"),
+                loader: "expose-loader",
+                options: {
+                  exposes: ["$", "jQuery"],
+                },
+            },
         ],
     },
 
@@ -105,6 +114,12 @@ module.exports = {
             filename: "index.html",
             template: "./src/index.html",
           }),
+
+          new HtmlWebpackPlugin({
+            filename: "product.html",
+            template: "./src/product.html",
+          }),
+
         new MiniCssExtractPlugin({
             filename: 'style.css',
         }),

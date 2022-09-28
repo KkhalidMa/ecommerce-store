@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة المنتج | شركة عربي</title>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@300;400;500&display=swap" rel="stylesheet">
+    <script type="text/html" src="{require('index.js')}"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <!--navbar starts-->
+        <div class="row">
+            <nav class="navbar custom-navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="./images/logo.png" alt="logo">
+                    </a>
+
+                    <!--الزر الذي يظهر عندما يتم تصغير عرض الشاشة-->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <i class="fa-solid fa-bars"></i>
+                        </span>
+                    </button>
+
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control" type="search" placeholder="ما تبحث عنه ..." aria-label="Search">
+
+                        <div class="dropdown">
+                            <a class="btn btn-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                أختر فئة
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="checkbox" value="women">نسائي
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="dropdown-item">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="checkbox" value="men"> رجالي
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="dropdown-item">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="checkbox" value="kids">أطفالي
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button class="btn btn-light my-2 my-sm-0" type="submit">أبحث</button>
+                    </form>
+                
+                    <!--روابط التنقل-->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">الصفحة الرئيسية</a>
+                            </li>
+                            <li class="nav-item dropdown" aria-labelledby="navbarDropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="true">
+                                    أقسام المتجر
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">رجالي</a>
+                                    <a class="dropdown-item" href="#">نسائي</a>
+                                    <a class="dropdown-item" href="#">أطفالي</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="search.html">البحث المتقدم</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact-us.html">تواصل معنا</a>
+                            </li>
+                            <!--عربة الشراء-->
+                            <li class="nav-item">
+                                <a href="checkout.html" class="nav-link btn btn-icon" data-toggle="tooltip" data-placement="top" title="عربــة الشراء">
+                                    <i class="fas fa-cart-shopping"></i> 
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--روابط التنقل-->
+                </div>
+            </nav>
+        </div>
+        <!--navabr ends-->
+
+        <!--product page body-->
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!--breadcrumb starts-->
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="index.html">الصفحة الرئيسية</a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="#">ملابس رجالي</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">قميص تك فت بيز</li>
+                        </ol>
+                    </nav>
+                    <!--breadcrumb ends-->
+                </div>
+            </div>
+
+            <div class="row product-view-details">
+                <div class="col-lg-5 offset-lg-1">
+                    <!--product carousel-->
+                    <div id="productCarousel" class="carousel slide" data-ride="carousel">
+
+                        <ol class="carousel-indicators">
+                            <img src="images/product_1.jpg" data-target="#productCarousel" data-slide-to="0" class="active">
+                            <img src="images/product_2.jpg" data-target="#productCarousel" data-slide-to="1" alt="">
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="images/product_1.jpg" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/product_2.jpg" alt="Second slide">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--product carousel ends-->
+
+                <div class="col-lg-5">
+                    <div class="product-details">
+                        <div class="col-12">
+                            <h6>ملابس رجالي</h6>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="clearfix">
+                                <div class="float-right">
+                                    <h1>قميص تك فت بيز</h1>
+                                </div>
+                                <div class="float-left">
+                                    <div class="price">75$</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <p>
+                                حقق أقصى أداء أثناء تمارينك الرياضية مع قميص تك فت بيز الرياضي الذي يمنحك الراحة ويدعم عضلاتك.
+                            </p>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="clearfix">
+                                <div class="float-right">
+                                    الماركة:
+                                    <img src="images/puma_small.png" alt="">
+                                </div>
+                                <div class="float-left">
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star active"></i>
+                                        <i class="fa-solid fa-star active"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 sizes-colors">
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--product page body ends-->
+
+        <!--footer starts-->
+        <footer>
+            <div class="row text-center">
+                <div class="col-12">
+                    <img src="images/logo_footer.png" alt="footer logo">
+                </div>
+
+                <div class="footer-nav-links col-12 d-md-block d-none">
+                    <a href="index.html">الصفحة الرئيسية</a>
+                    <a href="search.html">البحث المتقدم</a>
+                    <a href="contact-us.html">تواصل معنا</a>
+                </div>
+                <hr class="line">
+            </div>
+
+            <div class="row text-center">
+                <div class="news-letter col-12">
+                    <p>تابع النشرة البريدية لمتابعة أحدث العروض</p>
+                    <form>
+                        <div class="form-group">
+                            <input class="text-right" type="email" name="email" placeholder="بريدك الالكتروني">
+                            <button class="btn" type="submit">متابعة</button>
+                        </div>
+                    </form>
+                </div>                        
+            </div>
+
+            <div class="copy-social text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="clearfix">
+                                <div class="copy-right float-right">
+                                    جميع الحقوق محفوظة للمتجر 2022&reg; 
+                                </div>
+                                <div class="footer-social-media float-left">
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <i class="fa-brands fa-facebook"></i>
+                                    <i class="fa-brands fa-twitter"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--footer ends-->
+    </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+.navbar-nav .nav-item a.btn-icon{
+    color: #555555;
+    border: 1px solid #555555;
+    padding: 5px 10px 4px;
+    margin-right: 20px;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+a.carousel-control-next,
+a.carousel-control-prev{
+    color: black;
+    font-size: 40px;
+}

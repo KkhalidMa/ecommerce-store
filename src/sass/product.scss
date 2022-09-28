@@ -1,0 +1,22 @@
+@import './variable';
+
+.product-view-details{
+    padding-bottom: 90px ;
+
+    #productCarousel{
+        .carousel-indicators{
+            img{
+                width: 90px;
+                height: 90px;
+                border: 1px solid $grey-color;
+                margin-left: 7px;
+                position: relative;
+                bottom: -60px;
+
+                &.active{
+                    border: 1px solid $main-color;
+                }
+            }
+        }
+    }
+}
